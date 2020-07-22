@@ -1,8 +1,28 @@
 {
     "title": "输入法完美切换",
     "rules": [{
-        "description": "左Control=>中文，左Command=>英语，右Command=>日语",
+        "description": "长按Spacebar=>左Control，左Control=>中文，左Command=>英语，右Command=>日语",
         "manipulators": [{
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                        "key_code": "spacebar"
+                    }],
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "left_command",
+                    "lazy": true
+                }],
+                "to_if_alone": [{
+                    "key_code": "spacebar"
+                }]
+            },
+            {
                 "type": "basic",
                 "from": {
                     "key_code": "left_control",
