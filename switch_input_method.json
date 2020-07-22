@@ -13,7 +13,8 @@
                     }
                 },
                 "to": [{
-                    "key_code": "left_control"
+                    "key_code": "left_control",
+                    "lazy": true
                 }],
                 "to_if_alone": [{
                     "select_input_source": {
@@ -32,7 +33,8 @@
                     }
                 },
                 "to": [{
-                    "key_code": "left_command"
+                    "key_code": "left_command",
+                    "lazy": true
                 }],
                 "to_if_alone": [{
                     "key_code": "japanese_eisuu"
@@ -49,7 +51,8 @@
                     }
                 },
                 "to": [{
-                    "key_code": "right_command"
+                    "key_code": "right_command",
+                    "lazy": true
                 }],
                 "to_if_alone": [{
                     "key_code": "japanese_kana"
