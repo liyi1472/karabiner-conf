@@ -1,8 +1,8 @@
 # Karabiner
 
-左Command => 英语键盘。
+左Control => 中文。
 
-右Command => 日语输入法。
+左Command => 英语。
 
-右Option => 中文输入法。
+右Command => 日语。
 
