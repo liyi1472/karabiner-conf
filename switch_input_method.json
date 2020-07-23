@@ -1,7 +1,7 @@
 {
     "title": "输入法完美切换",
     "rules": [{
-        "description": "长按Spacebar=>左Control，左Control=>中文，左Command=>英语，右Command=>日语",
+        "description": "长按Spacebar=>左Control，左Control/右Option=>中文，左Command=>英语，右Command=>日语",
         "manipulators": [{
                 "type": "basic",
                 "from": {
@@ -34,6 +34,26 @@
                 },
                 "to": [{
                     "key_code": "left_control",
+                    "lazy": true
+                }],
+                "to_if_alone": [{
+                    "select_input_source": {
+                        "language": "zh-Hans"
+                    }
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "right_option",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "right_option",
                     "lazy": true
                 }],
                 "to_if_alone": [{
