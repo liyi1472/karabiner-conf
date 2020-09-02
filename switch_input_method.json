@@ -1,62 +1,137 @@
 {
     "title": "输入法完美切换",
-    "rules": [{
-        "description": "左Control=>中文(Kawa) | 左Command=>英语 | 右Command=>日语",
-        "manipulators": [{
-                "type": "basic",
-                "from": {
-                    "key_code": "left_control",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
+    "rules": [
+        {
+            "description": "左Control=>中文(Kawa) | 左Command=>英语 | 右Command=>日语",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_control",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ]
                 },
-                "to": [{
-                    "key_code": "left_control",
-                    "lazy": true
-                }],
-                "to_if_alone": [{
-                    "key_code": "a",
-                    "modifiers": ["command", "shift"]
-                }]
-            },
-            {
-                "type": "basic",
-                "from": {
-                    "key_code": "left_command",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_option",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_option",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ]
                 },
-                "to": [{
-                    "key_code": "left_command",
-                    "lazy": true
-                }],
-                "to_if_alone": [{
-                    "key_code": "japanese_eisuu"
-                }]
-            },
-            {
-                "type": "basic",
-                "from": {
-                    "key_code": "right_command",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ]
                 },
-                "to": [{
-                    "key_code": "right_command",
-                    "lazy": true
-                }],
-                "to_if_alone": [{
-                    "key_code": "japanese_kana"
-                }]
-            }
-        ]
-    }]
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "japanese_kana"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "右Option=>中文(Kawa)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_option",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_option",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
