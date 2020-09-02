@@ -1,30 +1,10 @@
 {
     "title": "输入法完美切换",
     "rules": [{
-        "description": "长按Spacebar=>左Control，左Control/右Option=>中文，左Command=>英语，右Command=>日语",
+        "description": "左Control=>中文(Kawa) | 左Command=>英语 | 右Command=>日语",
         "manipulators": [{
                 "type": "basic",
                 "from": {
-                    "simultaneous": [{
-                        "key_code": "spacebar"
-                    }],
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
-                },
-                "to": [{
-                    "key_code": "left_command",
-                    "lazy": true
-                }],
-                "to_if_alone": [{
-                    "key_code": "spacebar"
-                }]
-            },
-            {
-                "type": "basic",
-                "from": {
                     "key_code": "left_control",
                     "modifiers": {
                         "optional": [
@@ -37,29 +17,8 @@
                     "lazy": true
                 }],
                 "to_if_alone": [{
-                    "select_input_source": {
-                        "language": "zh-Hans"
-                    }
-                }]
-            },
-            {
-                "type": "basic",
-                "from": {
-                    "key_code": "right_option",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
-                },
-                "to": [{
-                    "key_code": "right_option",
-                    "lazy": true
-                }],
-                "to_if_alone": [{
-                    "select_input_source": {
-                        "language": "zh-Hans"
-                    }
+                    "key_code": "a",
+                    "modifiers": ["command", "shift"]
                 }]
             },
             {

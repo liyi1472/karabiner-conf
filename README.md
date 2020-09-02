@@ -1,10 +1,20 @@
-# Karabiner
+# Karabiner + Kawa
 
-> 推荐关闭系统设置中切换输入法快捷键。
+左Control => 中文(Kawa)。
 
-左Control => 中文。
+> Kawa: command+shift+a => 搜狗拼音
 
 左Command => 英语。
 
 右Command => 日语。
+
+
+
+---
+
+<img src="screenshot/keyboard.png" alt="keyboard" style="zoom: 40%;" /> 
+
+<img src="screenshot/karabiner.png" alt="karabiner" style="zoom: 40%;" /> 
+
+<img src="screenshot/kawa.png" alt="kawa" style="zoom: 40%;" /> 
 
