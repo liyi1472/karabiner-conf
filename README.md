@@ -1,6 +1,6 @@
 # Karabiner + Kawa
 
-左Control => 中文(Kawa)。
+左Control => 中文 ([**Kawa**](https://github.com/utatti/kawa/releases))。
 
 > Kawa: command+shift+a => 搜狗拼音
 
